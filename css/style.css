@@ -12,7 +12,7 @@ body * {
 }
 
 .container {
-    max-width: 1256px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -100,12 +100,14 @@ body * {
 .stage_one-container {
     position: relative;
     z-index: 1;
-    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: flex-start;
 }
 
 .title {
     margin: 0;
-    font-family: 'Yeseva One';
+    font-family:'Yeseva One';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -129,5 +131,65 @@ body * {
 }
 
 .calculate-button {
-    position: absolute;
+    padding: 19px 42px 21px 41px;
+    margin-right: 20px;
+}
+
+.submit-button {
+    padding: 19px 23px 21px 22px;
+    background: none;
+    border: 1px solid #FFFFFF;
+}
+
+.stage_two {
+    background-color: black;
+}
+
+.stage_two-container {
+    position: relative;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: flex-start;
+    max-width: 700px;
+}
+
+.city_list {
+    list-style: none;
+    display: flex;
+}
+
+.city_list_unit {
+    margin-right: 60px;
+}
+
+.city_list_unit a {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects {
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects_description {
+    margin: 0;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
 }
