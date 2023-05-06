@@ -151,6 +151,7 @@ body * {
     height: auto;
     justify-content: flex-end;
     max-width: 1440px;
+    padding-bottom: 418px;
 }
 
 .stage_two-wrapper {
@@ -236,3 +237,52 @@ body * {
     line-height: 21px;
     color: #FFFFFF;
 }
+
+.repairitem {
+    margin-left: 43px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 85px;
+}
+
+.circleone {
+    background-color: #FFFFFF;
+    border: 0.1875em solid #FFFFFF;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 18px;
+    margin-left: 30px;
+}
+
+.circletwo {
+    background-color: #FFFFFF;
+    border: 0.1875em solid #FFFFFF;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 18px;
+}
+
+.circlethree {
+    background-color: #FFFFFF;
+    border: 0.1875em solid #FFFFFF;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 30px;
+}
+
+.stage_three-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -300px;
+}
+
+.play {
+    margin-top: -260px;
+    margin-bottom: 237px;
+}
+
