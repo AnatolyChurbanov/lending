@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Nunito Sans';
@@ -7,7 +8,7 @@ body * {
     box-sizing: border-box;
 }
 
-.header {
+.header, .footer {
     background-color: black;
 }
 
@@ -276,13 +277,726 @@ body * {
 }
 
 .stage_three-container {
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-top: -300px;
 }
 
-.play {
-    margin-top: -260px;
-    margin-bottom: 237px;
+.cameraicon {
+    margin-bottom: 31px;
 }
 
+.play {
+    margin-top: -260px;
+}
+
+.line {
+    margin-bottom: 35px;
+    margin-top: 237px;
+}
+
+.stagethreetext {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 93px;
+}
+
+.label {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.namepart, .telpart, .tel_wrapper, .email_wrapper, .username_wrapper {
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.namepart {
+    margin-right: 58px;
+}
+
+.telpart {
+    margin-right: 49px;
+}
+
+.label {
+    position: absolute;
+    bottom: 38px;
+}
+
+.thirdstagebutton, .fourthstagebutton {
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 213px;
+    height: 51px;
+
+}
+
+.username, .telephone {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 231px;
+    padding-bottom: 8px;
+}
+
+.check {
+    margin-top: 39px;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+.stage_four-container {
+    position: relative;
+    height: auto;
+    justify-content: center;
+    max-width: 1440px;
+    flex-direction: column;
+}
+
+.stagefourheader {
+    margin-top: 75px;
+    margin-bottom: 13px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.hammer {
+    margin-bottom: 31px;
+    display: flex;
+    justify-content: center;
+}
+
+.productpart {
+    display: flex;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.productinfo {
+    margin-left: 31px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    margin-top: -94px;
+    width: 330px;
+    height: 286px;
+}
+
+.productsheader {
+    padding-left: 34px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+
+.infolist {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    padding-left: 34px;
+}
+
+.price {
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    width: 228px;
+    height: 54px;
+}
+
+.priceheader {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 54px;
+}
+
+.formpart {
+    margin-top: 124px;
+}
+
+.formholder {
+    display: flex;
+}
+
+.fourstageform {
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    width: 506px;
+    height: 509px;
+    flex-wrap: wrap;
+}
+
+.stagefourlabel {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 38px;
+}
+
+.formheader {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 39px;
+    margin-left: 124px;
+    width: 250px;
+}
+
+.usernamesecond, .telephonesecond, .email {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 231px;
+    padding-bottom: 8px;
+    background-color: #181818;
+}
+
+.tel_wrapper, .email_wrapper, .username_wrapper {
+    margin-bottom: 48px;
+}
+
+.tel_wrapper, .email_wrapper, .username_wrapper, .second_check {
+    padding-left: 49px;
+}
+
+.second_text {
+    color: #FFFFFF;
+}
+
+.second_check {
+    margin-bottom: 39px;
+    width: 350px;
+}
+
+.fourthstagebutton {
+    margin-left: 244px;
+}
+
+.formholder {
+    background-image: url(../img/prosbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.pros {
+    display: flex;
+    flex-direction: column;
+    margin-right: 145px;
+}
+
+.prostext {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.prosunit {
+    margin-bottom: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.pigpic {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 242px;
+}
+
+.stagefive {
+    background-image: url(../img/stagefivecover.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.stage_five-container {
+    position: relative;
+    z-index: 1;
+    height: 864px;
+}
+
+.listwrapper {
+    margin-right: 77px;
+}
+
+.listheader {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 47px;
+}
+
+.fantasylist {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+    list-style: none;
+    padding: 0;
+}
+
+.fantasylist_unit {
+    margin-bottom: 25px;
+}
+
+.picture_wrapper_first, .picture_wrapper_second {
+    max-width: 354px;
+}
+
+.picture_wrapper_first {
+    margin-top: -42px;
+}
+
+.picture_wrapper_second {
+    margin-top: -113px;
+}
+
+.fantasypicture {
+    margin-bottom: 39px;
+}
+
+.stagesix {
+    background-image: url(../img/stagesixcover.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 1107px;
+}
+
+.stage_six-container {
+    position: relative;
+    height: auto;
+    justify-content: center;
+    max-width: 1440px;
+    flex-direction: column;
+}
+
+.stagesixheader {
+    margin-top: 110px;
+}
+
+.stagesixtext {
+    margin-top: 0;
+    margin-bottom: 39px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+
+.feedbackwrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.person {
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    margin-right: 54px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    max-width: 376px;
+    max-height: 428px;
+}
+
+.feedback_namepart {
+    display: flex;
+    margin-bottom: 39px;
+    max-width: 300px;
+}
+
+.feedbackname {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.feedback_text {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    /* or 23px */
+    color: #959595;
+}
+
+.feedbackprice {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.thirdfeedback {
+    margin-right: 0;
+}
+
+.stageseven{
+    background-image: linear-gradient(180deg, rgb(10, 10, 10) 3.47%, rgba(16, 16, 16, 0.72) 100%), url(../img/stagesevencover.jpg);
+    background-size: cover;
+}
+
+.stage_seven-container {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lastform {
+    width: 883px;
+    height: 500px;
+    align-items: center;
+    margin-top: -250px;
+}
+
+.example {
+    display: flex;
+    margin-top: 46px;
+    margin-bottom: 49px;
+}
+
+.questionsinput {
+    width: 516px;
+}
+
+.lastformheader {
+    margin-left: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.lastformbutton {
+    margin-left: 0;
+}
+
+.lastformwrapper {
+    padding: 0px;
+}
+
+.lastformwrapperthree {
+    padding-left: 10px;
+}
+
+.adress_text {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 52px 0 26px 0;
+}
+
+.stageseven_icons {
+    margin-bottom: 49px;
+}
+
+.stageseven_icon {
+    margin-right: 15px;
+}
+
+.map {
+    margin-bottom: 66px;
+}
+
+
+@media  screen and (max-width: 1300px) {
+    /* STAGE ONE */
+    .container {
+        max-width: 768px;
+    }
+
+    .navigation_list, .number, .city_list, .vectorleft, .circleone, .circletwo, .circlethree, .vectorright {
+        display: none;
+    }
+
+    .buttonwrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 760px;
+    }
+
+    .navbutton {
+        width: 170px;
+    }
+
+    .calculate-button {
+        margin-bottom: 26px;
+    }
+    /* STAGE TWO */
+    .stage_two-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .stage_two-image {
+        margin-left: 40px;
+    }
+
+    .projects, .projects_description {
+        text-align: center;
+    }
+    /* STAGE THREE */
+    .stagethree {
+        background-color: black;
+    }
+
+    .stagethreetext {
+        color: white;
+    }
+    
+    .userninfo {
+        flex-direction: column;
+    }
+
+    .label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    input {
+        background-color: black;
+    }
+
+    .username {
+        margin-bottom: 63px;
+        width: 760px;
+    }
+
+    .namelabel {
+        bottom: 100px;
+    }
+
+    .telephone {
+        margin-bottom: 28px;
+        width: 760px;
+    }
+
+    .phonelabel {
+        bottom: 70px;
+    }
+
+    .thirdstagebutton {
+        order: 4;
+        margin-top: 62px;
+    }
+
+    .text {
+        color: white;
+    }
+
+    .stage_three-container {
+        max-height: 1268px;
+    }
+    /* STAGE FOUR */
+
+    .stage_four-container {
+        padding-bottom: 266px;
+    }
+    
+    .productpart {
+        flex-direction: column;
+    }
+
+    .product {
+        margin-bottom: 78px;
+    }
+
+    .formpart {
+        display: none;
+    }
+    /* STAGE FIVE */
+
+    .fantasylist {
+        display: none;
+    }
+
+    .stagefive {
+        background-image: none;
+        background-color:black;
+    }
+
+    .stage_five-container {
+        flex-direction: column;
+        max-height: 318px;
+    }
+
+    .picture_wrapper_second {
+        display: none;
+    }
+
+    .listwrapper {
+        margin-top: -260px;
+        margin-right: 0;
+    }
+
+    .fantasypicturetwo {
+        display: none;
+    }
+
+    .picture_wrapper_first {
+        max-width: 760px;
+        margin-bottom: 52px;
+    }
+
+    .fantasypicture {
+        width: 450px;
+        height: 450px;
+    }
+
+
+    .stagesix_overlay {
+        display: none;
+    }
+    /* STAGE SIX */
+    .stagesix {
+        display: none;
+    }
+    /* STAGE SEVEN */
+
+    .stageseven {
+        background-image: none;
+        background-color: black;
+    }
+
+    .lastform {
+        margin-top: 0;
+        width: 760px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .map {
+        order: 1;
+        margin-top: 46px;
+    }
+
+    .adress {
+        order: 3;
+    }
+
+    .stageseven_icons {
+        order: 4;
+    }
+}
